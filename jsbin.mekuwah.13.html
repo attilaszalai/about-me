@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2017 by attilaszalai (http://jsbin.com/mekuwah/13/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Profile card</title>
+<style id="jsbin-css">
+/* CSS reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(37, 37, 37);
+  margin: 1.25rem auto;
+  padding: 0.3125rem;
+}
+
+
+/* Layout Styles */
+
+.profile-card {
+  background-color: #fffafa;
+  max-width: 460px;
+  min-width: 300px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  margin: 0 auto 1rem;
+}
+
+
+ {
+  width: 100%;
+}
+
+.introduction, .name-headline {
+  width: 100%;
+  padding: 0.1rem;
+}
+
+.name-headline, .location {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.location {
+  margin-top: 1rem;
+}
+
+.introduction {
+  font-family: 'Cabin', sans-serif;
+  text-align: justify;
+  background-color: #fffafa;
+}
+
+.links {
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+.introduction {
+  padding: 1rem;
+}
+
+.name-headline, .introduction, .fa-linkedin, .fa-instagram, .fa-github {
+  color: rgb(58, 48, 48);
+}
+
+.fa-linkedin, .fa-instagram, .fa-github {
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+.fa-linkedin:hover, .fa-instagram:hover, .fa-github:hover {
+  transform: scale(1.4);
+  transition: all 0.5s ease-in-out;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h6 {
+  font-family: 'Cabin', sans-serif;
+  color: rgb(169,169,169);
+  text-align: center;
+  margin-top: 1rem;
+}
+</style>
+</head>
+<body>
+<div class="profile-card">
+  <div class"profile-image">
+  <img src="http://farm5.staticflickr.com/4258/34919123054_9388c6aa48_c.jpg" alt="Attila Szalai">
+  </div>  
+  <div class="content">
+    <div class="name-headline">
+      <div class="name-position">
+      <h1><b>Attila Szalai</b></h1>
+        <p><strong>web developer</strong></p>
+      </div>
+      <div class="location">
+        <h4>from</h4>
+      <h4><i class="fa fa-map-marker"></i> Budapest, HU</h4>
+        </div>
+    </div>
+    <div class="introduction">
+      <p class=about>Currently I am a learning associate at EY Hungary and living in Budapest. My interests range from technology to entrepreneurship. I am also interested in programming.<br>I am learning to use HTML5, CSS, Javascript, Node.js, Boostrap and Git.<br>
+        If you would like to get in touch, feel free to say hello through any of the social links below.</p>
+      <h6>#programming #biking #traveling</h6>
+    <section class="links">
+      <h4>Contact me via:</h4>
+      <ul>
+        <li><a href="https://linkedin.com/in/attila-szalai-19861208/"target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/attilaszalai"target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://instagram.com/szate"target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </section>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
